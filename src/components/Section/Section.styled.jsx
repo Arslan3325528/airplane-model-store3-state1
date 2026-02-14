@@ -7,9 +7,6 @@ export const TitleLugrasimoBold = styled.h2`
     font-weight: 700;
     font-style: normal;
 /*//todo: .title */
-    /* width: max-content; */
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 24px;
     font-size: 48px;
     text-align: center;
