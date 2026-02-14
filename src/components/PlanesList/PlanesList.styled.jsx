@@ -11,27 +11,19 @@ export const PlanesGallery = styled.ul`
 `;
 
 export const PlanesItem = styled.li`
-/** backgroundColor: '#ffdb92', // "year" до 1946 */
     display: grid;
     gap: 12px;
     padding: 10px;
-    background-color: #ffdb92;
-    outline: 1px solid grey;
+    /* background-color: #ffdb92; */
+    //todo: backgroundColor: '#ffdb92', ---> "year" до 1946
+    //todo: backgroundColor: '#d2fdbd', ---> "year" від 1946 і до 1999
+    //todo: backgroundColor: '#d6f1ff', ---> "year" від 2000  */
     background-color: ${({ year }) => {
-    console.log("@emotion/styled_year:", year); //
+        // console.log("@emotion/styled_year:", year); //!
+        let bgColor = '#ffdb92';
+        if (year > 1945) bgColor = '#d2fdbd';
+        if (year > 1999) bgColor = '#d6f1ff';
+        return bgColor;
     }};
+    outline: 1px solid grey;
 `;
-
-/** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
-/* .planesItemLast {
-    composes: planesItem;
-    background-color: #d2fdbd;
-} */
-
-/** backgroundColor: '#d6f1ff', // "year" від 2000 - current */
-
-/* todo: var.2  та var.2.1 */
-/* .planesItemCurrent {
-    composes: planesItem;
-    background-color: #d6f1ff;
-} */
