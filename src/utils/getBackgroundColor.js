@@ -1,6 +1,7 @@
 //! Для визначення кольору фону картки в залежності від значення "year"
 import clsx from "clsx";
 
+
 export function getBgColorBuiltInStyles(year) {
     let bgColor = '#ffdb92';
     if (year > 1945) bgColor = '#d2fdbd';
@@ -62,5 +63,14 @@ export function getBgColorCSSModule(year) {
     console.log("className:", className); //!
     return className;
 };
+// _____________________________________________________
 
 
+//todo: Emotion
+export function getBgColorEmotion({ year }) {
+    // console.log("@emotion/styled_year:", year); //!
+    let bgColor = '#ffdb92';
+    if (year > 1945) bgColor = '#d2fdbd';
+    if (year > 1999) bgColor = '#d6f1ff';
+    return bgColor;
+};
