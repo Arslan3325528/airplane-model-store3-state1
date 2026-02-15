@@ -60,6 +60,7 @@ export function Planes({
   const duration = getManufacturingYears(manufacturingStart, manufacturingEnd);
   // console.log("duration", duration); //!
   return (
+    //! CSS-модулі
     <>
       <h3 className={css.planeTitle}>{nameBrief}</h3>
       <img src={urlMain} alt={nameBrief} />
@@ -82,7 +83,7 @@ export function Planes({
       <div className={css.actualImageBox}>
         {urlActual.map(item =>
           <img
-            key={item} 
+            key={item} //* вже унікальний 
             src={item}
             alt={nameBrief}
             className={css.actualImage}
@@ -96,6 +97,39 @@ export function Planes({
         Додати до кошику
       </button>
     </>
+    
+    //! Emotion
+    // <>
+    //   <h3>{nameBrief}</h3>
+    //   <img src={urlMain} alt={nameBrief} />
+    //   <p><FcTrademark size={iconSize.md} /> Повна назва: <span >{nameFull}</span></p>
+    //   <p><GiCommercialAirplane size={iconSize.md} /> Тип: <span>{type}</span></p>
+    //   <p><GiCurlyMask size={iconSize.md} /> Прізвисько: <span>{nickname}</span></p>
+    //   <p><CiGlobe size={iconSize.md} /> Країна виробник: <span>{country}</span></p>
+    //   <p><AiOutlineClockCircle size={iconSize.md} /> Рік випуску: <span>{year}</span></p>
+    //   <p><TbClockHour4Filled size={iconSize.md} /> Тривалість виробництва (в роках): <span>{getManufacturingYears(manufacturingStart, manufacturingEnd)}</span></p>
+    //   <p><AiOutlineDollarCircle size={iconSize.md} /> Ціна: <span>{price}</span></p>
+    //   <p><AiOutlineInfoCircle size={iconSize.md} /> Опис: <span>{description}</span></p>
+    //   {/*//! заголовок зображень */}
+    //   <h4><GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:</h4>
+    //   <img src={urlPromotional} alt={nameBrief} />
+    //   {/*//! заголовок зображень */}
+    //   <h4><CiAirportSign1 size={iconSize.lg} /> Реальна модель:</h4>
+    //   <div>
+    //     {urlActual.map(item =>
+    //       <img
+    //         key={item} //* вже унікальний 
+    //         src={item}
+    //         alt={nameBrief}
+    //       />
+    //     )}
+    //   </div>
+    //   <button
+    //     type="button"
+    //   >
+    //     Додати до кошику
+    //   </button>
+    // </>
   );
 };
 
