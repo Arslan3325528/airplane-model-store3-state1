@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 
-export const PlanesGallery = styled.ul`
-.planeTitle {
+export const PlaneTitle = styled.h3`
     height: 72px; /*todo: додатково: */
     margin-bottom: 12px;
     padding: 12px 16px;
@@ -12,74 +11,72 @@ export const PlanesGallery = styled.ul`
     border-radius: 8px;
     background-color: yellow;
     color: blue;
-}
+`;
 
-.textField {
+export const TextField = styled.p`
     font-size: 18px;
     font-weight: 700;
-}
+`;
 
-.textFieldValue {
+export const TextFieldValue = styled.span`
     font-weight: 400;
     font-style: italic;
-}
+`;
 
-/*//todo: Використання властивості composes */
-/*//todo: додатково: */
-.boldStyle {
-    composes: textFieldValue;
+export const TextFieldValueBoldStyle = styled.span`
+    font-weight: 400;
+    font-style: italic;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 1.1em;
     color: #0b5500;
     font-weight: 700;
-}
-
-.imageTitles {
-    text-align: center;
-    vertical-align: bottom;
-    color: blue;
-}
-
-/*/*todo: Налаштування для іконок */
-.icon {
-    margin-bottom: -8px;
-    color: #9b25fc;
-}
-
-.iconImageTitles {
-    margin-bottom: -10px;
-}
-
-.actualImageBox {
-    /* min-height: 418px;  */
-    /*todo: додатково: */
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: gray;
-}
-
-.actualImage {
-    max-width: calc((100% - 10px) / 2);
-    border-radius: 4px;
-}
-
-.planeButton {
-    width: 70%;
-    margin: 20px auto;
-    padding: 16px 32px;
-    display: inline-block;
-    align-items: center;
-    font-family: Franklin Gothic Medium, Arial Narrow;
-    font-weight: 700;
-    font-size: 1.5rem;
-    border-radius: 12px;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #008080;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9);
-}
 `;
+
+// .imageTitles {
+//     text-align: center;
+//     vertical-align: bottom;
+//     color: blue;
+// }
+
+// /*/*todo: Налаштування для іконок */
+// .icon {
+//     margin-bottom: -8px;
+//     color: #9b25fc;
+// }
+
+// .iconImageTitles {
+//     margin-bottom: -10px;
+// }
+
+// .actualImageBox {
+//     /* min-height: 418px;  */
+//     /*todo: додатково: */
+//     display: flex;
+//     gap: 10px;
+//     flex-wrap: wrap;
+//     padding: 8px;
+//     border-radius: 8px;
+//     background-color: gray;
+// }
+
+// .actualImage {
+//     max-width: calc((100% - 10px) / 2);
+//     border-radius: 4px;
+// }
+
+// .planeButton {
+//     width: 70%;
+//     margin: 20px auto;
+//     padding: 16px 32px;
+//     display: inline-block;
+//     align-items: center;
+//     font-family: Franklin Gothic Medium, Arial Narrow;
+//     font-weight: 700;
+//     font-size: 1.5rem;
+//     border-radius: 12px;
+//     color: #ffffff;
+//     cursor: pointer;
+//     background-color: #008080;
+//     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
+//     box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9);
+// }
