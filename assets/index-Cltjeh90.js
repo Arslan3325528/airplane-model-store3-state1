@@ -43,7 +43,9 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
     outline: 1px solid grey;
 `,Jv=he.h3`
     height: 72px; /*todo: додатково: */
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
+    /*//! Налаштування відступів - spacing */
+    margin-bottom: ${n=>n.theme.spacing(3)};
     padding: 12px 16px;
     font-size: 32px;
     text-align: center;
