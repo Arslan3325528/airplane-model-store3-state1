@@ -24,5 +24,7 @@ export const theme = Object.freeze({
     planeButton: '#99ffff',
     planeButtonHover: '#d9d902',
   },
+  //! Налаштування відступів - spacing
   spacing: value => `${4 * value}px`,
 });
+
