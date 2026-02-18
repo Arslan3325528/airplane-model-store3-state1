@@ -31,6 +31,7 @@ export function PlanesList({ items }) {
                     key={item.id}
                 > */}
                     <Planes
+                        wikipediaPage={item.url.wikipedia}
                         urlMain={item.url.main}
                         urlPromotional={item.url.promotional}
                         urlActual={item.url.actual}

@@ -42,6 +42,7 @@ import { iconSize } from '@/constants';
 
 
 export function Planes({
+  wikipediaPage,
   urlMain = defaultImage, //! Дефолтне зображення
   urlPromotional,
   urlActual,
@@ -104,7 +105,8 @@ export function Planes({
     //! Emotion
     <>
       <PlaneTitle>{nameBrief}</PlaneTitle>
-      <img src={urlMain} alt={nameBrief} />
+      {/* <img src={urlMain} alt={nameBrief} /> */}
+      <a href={wikipediaPage} target="_blank" rel="noreferrer noopener"><img src={urlMain} alt={nameBrief} /></a>
       <TextField><FcTrademark size={iconSize.md} /> Повна назва: <TextFieldValueBoldStyle>{nameFull}</TextFieldValueBoldStyle></TextField>
       <TextField><GiCommercialAirplane size={iconSize.md} /> Тип: <TextFieldValue>{type}</TextFieldValue></TextField>
       <TextField><GiCurlyMask size={iconSize.md} /> Прізвисько: <TextFieldValue>{nickname}</TextFieldValue></TextField>
@@ -137,6 +139,7 @@ export function Planes({
 
 //! Контроль типу змінних - propTypes
 Planes.propTypes = {
+  wikipediaPage: PropTypes.string.isRequired,
   urlMain: PropTypes.string.isRequired,
   urlPromotional: PropTypes.string.isRequired,
   urlActual: PropTypes.array,
