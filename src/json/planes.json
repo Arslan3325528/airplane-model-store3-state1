@@ -271,5 +271,35 @@
       "start": "2011-01-01T00:00:00",
       "end": "now"
     }
+  },
+  {
+    "id": "id-10",
+    "url": {
+      "wikipedia": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%93-15",
+      "main": "https://armedman.ru/wp-content/uploads/2015/09/mig-15-6.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczNLy69q5N36C6lbTE48x-oGU1MYHstJsEJdEsv-sHAhcLywlXtCbZ2_5IJXYXKeL6Yquom5hXyT0chFc02LREQeLe6g32eN0YnHJif-SOv3_Oi8WilcKWxWKu1toPnmLd0ydSQVwllAkKWA6TsuiQJi=w1275-h912-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store2-stylization3/images/planes-actual/mig-15-comp-1.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/mig-15-comp-2.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/mig-15-comp-3.jpg",
+        "/airplane-model-store2-stylization3/images/planes-actual/mig-15-comp-4.jpg"
+      ]
+    },
+    "name": {
+      "brief": "MiG-15",
+      "full": "МиГ-15",
+      "nickname": "Фагот («Fagot»), Карлик («Midget»)"
+    },
+    "info": {
+      "year": 1947,
+      "country": "СРСР",
+      "type": "Реактивний винищувач",
+      "price": "$100000–300000",
+      "description": "Найбільш масовий реактивний бойовий літак в історії авіації, що складався на озброєнні багатьох країн світу, що став одним з основних винищувачів, що брали участь у Корейській війні, застосовувався в перших арабо-ізраїльських війнах, і в численних менш значних військових конфліктах по всьому світу"
+    },
+    "manufacturing": {
+      "start": "1947-01-01T00:00:00",
+      "end": "1959-01-01T00:00:00"
+    }
   }
 ]
