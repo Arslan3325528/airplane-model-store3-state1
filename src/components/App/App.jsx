@@ -1,13 +1,6 @@
-// import { Section } from '../Section/Section.jsx'; //! CSS-модулі + Emotion
-import { Section } from '@/components/Section/Section.jsx'; //! CSS-модулі + Emotion --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
-
-// import planes from '../../json/planes.json';
-import planes from '@/json/planes.json'; //! --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
-
-
-// import { PlanesList } from '../PlanesList/PlanesList.jsx'; //! CSS-модулі + Emotion
-import { PlanesList } from '@/components/PlanesList/PlanesList.jsx'; //! CSS-модулі + Emotion --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
-
+import { Section } from '@/components/Section/Section.jsx'; 
+import planes from '@/json/planes.json'; 
+import { PlanesList } from '@/components/PlanesList/PlanesList.jsx'; 
 
 export function App() {
   return (

@@ -11,7 +11,7 @@ import { App } from '@/components/App/App.jsx' //! CSS-модулі --> ✅✅�
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/airplane-model-store2-stylization3">
+    <BrowserRouter basename="/airplane-model-store3-state1">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
