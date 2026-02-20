@@ -32,13 +32,25 @@ export class Counter extends Component {
         // value: 5,
     };
 
-    handleIncrement = () => { 
+    handleIncrement = () => {
         // this.state.value = 6; //! ❗️❗️❗️ так не можна робити!!!!
-        this.setState({value: 9 }); //* ✅ так треба робити для створення НОВОГО ЗНАЧЕННЯ
+        // this.setState({ value: 9 }); //* ✅ так треба робити для створення НОВОГО ЗНАЧЕННЯ
+        //! Оновлення значення від ПОПЕРЕДНЬОГО
+        this.setState(prevState => {
+            return {
+                value: prevState.value + 1,
+            };
+        });
     };
 
-
-    handleDecrement = () => { };
+    handleDecrement = () => {
+        //! Оновлення значення від ПОПЕРЕДНЬОГО
+        this.setState(prevState => {
+            return {
+                value: prevState.value - 1,
+            };
+        });
+    };
 
     // handleIncrement() {
     //     console.log("+1");
