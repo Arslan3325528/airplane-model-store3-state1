@@ -8,7 +8,9 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 export function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      {/*//! Початковий стан лічильника з props */}
+      <Counter initialValue={10} />
 
       {/* <Section title="Магазин моделей літаків">
         <PlanesList items={planes} />

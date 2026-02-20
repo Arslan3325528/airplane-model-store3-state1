@@ -18,6 +18,11 @@ import css from "./Counter.module.css";
 //! Компонент-клас
 // export class Counter extends React.Component {
 export class Counter extends Component {
+    //! Дефолтні значення props
+    static defaultProps = {
+        initialValue: 9,
+    }
+
     //todo: var.1 - створення об'єкта state
     // constructor() {
     //     super();
@@ -30,6 +35,8 @@ export class Counter extends Component {
     state = {
         value: 0,
         // value: 5,
+        //! Початковий стан лічильника з props
+        value: this.props.initialValue,
     };
 
     handleIncrement = () => {
