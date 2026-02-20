@@ -21,7 +21,6 @@
 }
 
 /*todo: Використання властивості composes */
-/*todo: додатково: */
 .boldStyle {
     composes: textFieldValue;
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -47,8 +46,6 @@
 }
 
 .actualImageBox {
-    /* min-height: 418px;  */
-    /*todo: додатково: */
     display: flex;
     gap: 10px;
     flex-wrap: wrap;

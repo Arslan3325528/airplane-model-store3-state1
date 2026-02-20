@@ -55,12 +55,10 @@ export function getBgColorVanillaCSS(year) {
 
 //todo: CSS-модулі 
 export function getBgColorCSSModule(year) {
-    // return "planesItem"
-
     let className = "planesItem";
     if (year > 1945) className = "planesItemLast";
     if (year > 1999) className = "planesItemCurrent";
-    console.log("className:", className); //!
+    // console.log("className:", className); //!
     return className;
 };
 // _____________________________________________________

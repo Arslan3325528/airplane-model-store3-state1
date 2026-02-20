@@ -6,8 +6,8 @@ import { theme } from '@/constants'; //! Emotion Theme
 
 import './index.css';
 
-// import { App } from './components/App/App.jsx'; //! CSS-модулі
-import { App } from '@/components/App/App.jsx' //! CSS-модулі --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
+import { App } from '@/components/App/App.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
