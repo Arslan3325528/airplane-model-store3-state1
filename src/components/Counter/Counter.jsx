@@ -23,8 +23,18 @@ export class Counter extends Component {
             <div className={css.counter}>
                 <span className={css.counterValue}>0</span>
                 <div className={css.counterControls}>
-                    <button className={css.buttonIncrement}>+ 1</button>
-                    <button className={css.buttonDecrement}>- 1</button>
+                    <button
+                        className={css.buttonIncrement}
+                        type="button"
+                        onClick={() => {console.log("+1")}}
+                    >+ 1
+                    </button>
+                    <button
+                        className={css.buttonDecrement}
+                        type="button"
+                        onClick={() => { console.log("-1") }}
+                    >- 1
+                    </button>
                 </div>
             </div>
         )

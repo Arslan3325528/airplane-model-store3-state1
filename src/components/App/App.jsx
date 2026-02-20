@@ -8,7 +8,7 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 export function App() {
   return (
     <>
-      <Counter /> //! Збільшення/Зменьшення на 1
+      <Counter />
 
       {/* <Section title="Магазин моделей літаків">
         <PlanesList items={planes} />
