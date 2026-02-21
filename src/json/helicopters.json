@@ -21,7 +21,7 @@
     "info": {
       "year": 1975,
       "country": "США",
-      "type": "Ударний гелікоптер",
+      "type": "Ударний вертоліт",
       "price": "$52-61 млн",
       "description": "Основний бойовий вертоліт армії США із середини 1980-х років. На 2021 рік є найпоширенішим ударним гелікоптером у світі"
     },
@@ -34,31 +34,31 @@
     "id": "h-2",
     "aircraftType": "helicopter",
     "url": {
-      "wikipedia": "https://ru.wikipedia.org/wiki/Northrop_B-2_Spirit",
-      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/US_Air_Force_B-2_Spirit.jpg/2560px-US_Air_Force_B-2_Spirit.jpg",
+      "wikipedia": "https://ru.wikipedia.org/wiki/Eurocopter_Tiger",
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Eurocopter_EC_655_Tigre._Festival_A%C3%A9reo_Internacional_De_Gij%C3%B3n._Gij%C3%B3n_2016._%2827900053383%29_%28cropped%29.jpg/1920px-Eurocopter_EC_655_Tigre._Festival_A%C3%A9reo_Internacional_De_Gij%C3%B3n._Gij%C3%B3n_2016._%2827900053383%29_%28cropped%29.jpg",
       "promotional": "https://lh3.googleusercontent.com/pw/AP1GczPiy9v8KfUC_t5tRJrspcxBwYn51NwPkDONZ7YqnKCdnXQU_RLRMFuMTDvSeLw7H8L85J_sThjTBQ425WFvUmcihoxOt7BGmDKbyRcQDFfWYC5ywTQp6spBMyV9k9xDftkW98a1i2qu9zCRcvrkYxpj=w1319-h1315-s-no-gm?authuser=0",
       "actual": [
-        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-1.jpg",
-        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-2.jpg",
-        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-3.jpg",
-        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-4.jpg"
+        "/airplane-model-store3-state1/images/planes-actual/ec-665-comp-1.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/ec-665-comp-2.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/ec-665-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/ec-665-comp-4.jpg"
       ]
     },
     "name": {
       "brief": "EC-665",
-      "full": "B-2 Spirit",
-      "nickname": "Дух («Spirit»)"
+      "full": "Eurocopter EC665 Tiger",
+      "nickname": "Тигр («Tiger»)"
     },
     "info": {
-      "year": 1989,
-      "country": "США",
-      "type": "Стратегічний бомбардувальник",
-      "price": "$2,1 млрд",
-      "description": "Перший сучасний важкий літак зі схемою «літаюче крило», призначений для прориву щільної протиповітряної оборони (ППО) та доставки звичайної або ядерної зброї"
+      "year": 1991,
+      "country": "Франція, Німеччина",
+      "type": "Ударний вертоліт",
+      "price": "$39 млн",
+      "description": "Чотирилопатний, двомоторний ударний вертоліт, який має відзнаку першого повністю композитного вертольота, такі як «скляна кабіна», технології малопомітності та висока маневровість для підвищення живучості."
     },
     "manufacturing": {
-      "start": "1989-01-01T00:00:00",
-      "end": "2000-01-01T00:00:00"
+      "start": "1991-01-01T00:00:00",
+      "end": "now"
     }
   }
 ]
