@@ -1,4 +1,4 @@
-.planeTitle {
+.baseTitle {
     height: 72px; /*todo: додатково: */
     margin-bottom: 12px;
     padding: 12px 16px;
@@ -6,8 +6,18 @@
     text-align: center;
     border: 1px solid #9b9b00;
     border-radius: 8px;
-    background-color: yellow;
+    background-color: grey;
     color: blue;
+}
+
+.planeTitle {
+    composes: baseTitle;
+    background-color: yellow;
+}
+
+.helicopterTitle {
+    composes: baseTitle;
+    background-color: violet;
 }
 
 .textField {

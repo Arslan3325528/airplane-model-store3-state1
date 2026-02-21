@@ -10,13 +10,14 @@ import { TbClockHour4Filled } from "react-icons/tb";
 import { FcTrademark } from "react-icons/fc";
 
 //! Для розрахунку тривалості виробництва (реекспорт)
-import {getManufacturingYears} from '@/utils'; 
+import {getManufacturingYears, getAircraftTitleBgColor} from '@/utils'; 
 
 //! Константи для розмірів іконок
 import { iconSize } from '@/constants';
 
 
 export function Planes({
+  aircraftType,
   wikipediaPage,
   urlMain = defaultImage, //! Дефолтне зображення
   urlPromotional,
@@ -37,7 +38,8 @@ export function Planes({
   }
   return (
     <>
-      <h3 className={css.planeTitle}>{nameBrief}</h3>
+      {/* <h3 className={css.planeTitle}>{nameBrief}</h3> */}
+      <h3 className={css[getAircraftTitleBgColor(aircraftType)]}>{nameBrief}</h3>
       <a href={wikipediaPage} target="_blank" rel="noreferrer noopener"><img src={urlMain} alt={nameBrief} /></a>
       <p className={css.textField}><FcTrademark size={iconSize.md} className={css.icon} /> Повна назва: <span className={css.boldStyle} >{nameFull}</span></p>
       <p className={css.textField}><GiCommercialAirplane size={iconSize.md} className={css.icon} /> Тип: <span className={css.textFieldValue}>{type}</span></p>
@@ -74,6 +76,7 @@ export function Planes({
 
 //! Контроль типу змінних - propTypes
 Planes.propTypes = {
+  aircraftType: PropTypes.string.isRequired,
   wikipediaPage: PropTypes.string.isRequired,
   urlMain: PropTypes.string.isRequired,
   urlPromotional: PropTypes.string.isRequired,
