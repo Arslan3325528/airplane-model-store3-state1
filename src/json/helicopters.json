@@ -1,0 +1,64 @@
+[
+  {
+    "id": "h-1",
+    "aircraftType": "helicopter",
+    "url": {
+      "wikipedia": "https://ru.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II",
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg/2560px-USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczNHIIMUhJ_Aaep26EjuzzY6weX6Jg-vGVpL_62tWD9Ue-RxQR77-893d0qfKlohj8kvaSC7L72pMCJw9WkO4y2delL3l58a2oeNHR8cYpCnkxJzryZ9USP7bZN_F5cVNe-7UmhmFC_xX2_SaEZhLMud=w1359-h1437-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store3-state1/images/planes-actual/a-10-dark-comp-1.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/a-10-green-comp-2.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/a-10-green-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/a-10-green+dark-comp-4.jpg"
+      ]
+    },
+    "name": {
+      "brief": "A-10",
+      "full": "Fairchild-Republic A-10 Thunderbolt II",
+      "nickname": "Бородавочник («Warthog»)"
+    },
+    "info": {
+      "year": 1976,
+      "country": "США",
+      "type": "Штурмовик",
+      "price": "$18,8 млн",
+      "description": "Одномісний дводвигуновий штурмовик, призначений для надання безпосередньої підтримки сухопутних військ, ураження танків, бронемашин та інших наземних цілей"
+    },
+    "manufacturing": {
+      "start": "1975-01-01T00:00:00",
+      "end": "1984-01-01T00:00:00"
+    }
+  },
+  {
+    "id": "h-2",
+    "aircraftType": "helicopter",
+    "url": {
+      "wikipedia": "https://ru.wikipedia.org/wiki/Northrop_B-2_Spirit",
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/US_Air_Force_B-2_Spirit.jpg/2560px-US_Air_Force_B-2_Spirit.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczPlOJa_nz3Ch08sMU0GWfU3ZsRJsitvgpvb1tBucxFF2I7J89X1JhWGP-7BwF_LdZHkk2kbWWx8msIXr4YId3DiOkbmnLI91WJik0QPR5VmE0QoV1sY8HrOQztzLhCxVro3bA9kO-PGzA0Vt0iOUHIZ=w848-h847-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-1.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-2.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/b-2-comp-4.jpg"
+      ]
+    },
+    "name": {
+      "brief": "B-2",
+      "full": "B-2 Spirit",
+      "nickname": "Дух («Spirit»)"
+    },
+    "info": {
+      "year": 1989,
+      "country": "США",
+      "type": "Стратегічний бомбардувальник",
+      "price": "$2,1 млрд",
+      "description": "Перший сучасний важкий літак зі схемою «літаюче крило», призначений для прориву щільної протиповітряної оборони (ППО) та доставки звичайної або ядерної зброї"
+    },
+    "manufacturing": {
+      "start": "1989-01-01T00:00:00",
+      "end": "2000-01-01T00:00:00"
+    }
+  }
+]

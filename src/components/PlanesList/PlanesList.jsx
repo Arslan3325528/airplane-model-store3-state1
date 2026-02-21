@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from "./PlanesList.module.css"; 
 import { Planes } from '@/components/Planes/Planes.jsx'; 
-import { getBgColorCSSModule } from '@/utils/getBackgroundColor.js'; 
+import { getBgColorCSSModule } from '@/utils'; 
 
 
 export function PlanesList({ items }) {

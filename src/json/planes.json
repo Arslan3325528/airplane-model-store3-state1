@@ -1,6 +1,7 @@
 [
   {
-    "id": "id-1",
+    "id": "p-1",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II",
       "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg/2560px-USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg",
@@ -30,7 +31,8 @@
     }
   },
   {
-    "id": "id-2",
+    "id": "p-2",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Northrop_B-2_Spirit",
       "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/US_Air_Force_B-2_Spirit.jpg/2560px-US_Air_Force_B-2_Spirit.jpg",
@@ -60,7 +62,8 @@
     }
   },
   {
-    "id": "id-3",
+    "id": "p-3",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/F-22_Raptor",
       "main": "https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg",
@@ -90,7 +93,8 @@
     }
   },
   {
-    "id": "id-4",
+    "id": "p-4",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://en.wikipedia.org/wiki/Shenyang_J-35",
       "main": "https://focus.ua/static/storage/thumbs/1840x930/e/b5/eibsv6-3c005ff49a942c5f05fa898e73848b5e.webp?v=5162_1",
@@ -121,7 +125,8 @@
     }
   },
   {
-    "id": "id-5",
+    "id": "p-5",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/%D0%A1%D1%83-25",
       "main": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sukhoi_Su-25SM_%C2%ABRoman_Filipov%C2%BB_05.jpg",
@@ -151,7 +156,8 @@
     }
   },
   {
-    "id": "id-6",
+    "id": "p-6",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Messerschmitt_Bf_109",
       "main": "https://upload.wikimedia.org/wikipedia/commons/9/95/Messerschmitt_Bf_109E_at_Thunder_Over_Michigan.jpg",
@@ -181,7 +187,8 @@
     }
   },
   {
-    "id": "id-7",
+    "id": "p-7",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Chance_Vought_F4U_Corsair",
       "main": "https://upload.wikimedia.org/wikipedia/commons/6/66/Vought_F4U_Corsair_%28USMC%29.jpg",
@@ -209,10 +216,10 @@
       "start": "1940-01-01T00:00:00",
       "end": "1952-01-01T00:00:00"
     }
-  }
-  ,
+  },
   {
-    "id": "id-8",
+    "id": "p-8",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Grumman_F-14_Tomcat",
       "main": "https://upload.wikimedia.org/wikipedia/commons/f/f7/US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg",
@@ -240,10 +247,10 @@
       "start": "1974-01-01T00:00:00",
       "end": "1992-01-01T00:00:00"
     }
-  }
-  ,
+  },
   {
-    "id": "id-9",
+    "id": "p-9",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/Chengdu_J-20",
       "main": "https://upload.wikimedia.org/wikipedia/commons/a/a2/J-20_at_Airshow_China_2016.jpg",
@@ -273,7 +280,8 @@
     }
   },
   {
-    "id": "id-10",
+    "id": "p-10",
+    "aircraftType": "plane",
     "url": {
       "wikipedia": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%93-15",
       "main": "https://armedman.ru/wp-content/uploads/2015/09/mig-15-6.jpg",
