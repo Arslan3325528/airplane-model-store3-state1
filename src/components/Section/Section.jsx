@@ -2,15 +2,19 @@ import PropTypes from 'prop-types';
 import css from "./Section.module.css"; 
 
 
-export function Section({ title, children }) {
+export function Section({ presence, title, children }) {
   return (
-      <section>
-        {/* //! CSS-модулі з композицією класів */}
-        {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
-        {/* //! CSS-модулі з composes */}
-        {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>}
-        {children}
-      </section>
+    <>
+      {presence && 
+        <section>
+          {/* //! CSS-модулі з композицією класів */}
+          {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
+          {/* //! CSS-модулі з composes */}
+          {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>}
+          {children}
+        </section>
+      }
+    </>
   );
 };
 

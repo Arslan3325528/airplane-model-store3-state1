@@ -15,12 +15,12 @@ export function App() {
       {/* <Counter initialValue={10} /> */}
 
       {/*//! Вертольоти */}
-      <Section title="Магазин моделей вертольотів">
+      <Section presence={true} title="Магазин моделей вертольотів">
         <PlanesList items={helicopters} />
       </Section >
 
       {/*//! Літаки */}
-      <Section title="Магазин моделей літаків">
+      <Section presence={true} title="Магазин моделей літаків">
         <PlanesList items={planes} />
       </Section >
     </>
