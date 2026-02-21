@@ -1,7 +1,7 @@
 import { Section } from '@/components/Section/Section.jsx'; 
 import planes from '@/json/planes.json'; 
-import helicopters from '@/json/planes.json';
-
+import helicopters from '@/json/helicopters.json';
+// import { planes, helicopters } from '@/json';
 import { PlanesList } from '@/components/PlanesList/PlanesList.jsx';
 
 //! Збільшення/Зменьшення на 1
@@ -16,7 +16,7 @@ export function App() {
 
       {/*//! Вертольоти */}
       <Section title="Магазин моделей вертольотів">
-        <PlanesList items={planes} />
+        <PlanesList items={helicopters} />
       </Section >
 
       {/*//! Літаки */}
