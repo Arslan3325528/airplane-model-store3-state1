@@ -8,6 +8,8 @@ import { Filter } from '@/components/Filter/Filter.jsx';
 import planes from '@/json/planes.json';
 import helicopters from '@/json/helicopters.json';
 // import { planes, helicopters } from '@/json'; //! ❌ так не працює
+import aircrafts from '@/json/aircrafts.json';
+
 
 //! Збільшення/Зменьшення на 1
 import { Counter } from '@/components/Counter/Counter.jsx';
@@ -20,14 +22,14 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 //       {/*//! Початковий стан лічильника з props */}
 //       {/* <Counter initialValue={10} /> */}
 
-//       {/*//! Вертольоти */}
-//       <Section presence={true} title="Магазин моделей вертольотів">
-//         <PlanesList items={helicopters} />
-//       </Section >
-
 //       {/*//! Літаки */}
 //       <Section presence={true} title="Магазин моделей літаків">
 //         <PlanesList items={planes} />
+//       </Section >
+
+//       {/*//! Вертольоти */}
+//       <Section presence={true} title="Магазин моделей вертольотів">
+//         <PlanesList items={helicopters} />
 //       </Section >
 //     </>
 //   );
@@ -37,15 +39,17 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 //! Компонент-клас
 export class App extends Component {
   state = {
-    isPlanes: true,
-    isHelicopters: true,
+    isPlanes: false,
+    isHelicopters: false,
+    isAll: true,
   };
 
   allFiltration = () => {
     console.log("Клік в кнопку All");
     this.setState({
-      isPlanes: true,
-      isHelicopters: true,
+      isPlanes: false,
+      isHelicopters: false,
+      isAll: true,
     });
   };
   planeFiltration = () => {
@@ -53,6 +57,7 @@ export class App extends Component {
     this.setState({
       isPlanes: true,
       isHelicopters: false,
+      isAll: false,
     });
   };
   helicopterFiltration = () => {
@@ -60,6 +65,7 @@ export class App extends Component {
     this.setState({
       isPlanes: false,
       isHelicopters: true,
+      isAll: false,
     });
   };
 
@@ -103,14 +109,19 @@ export class App extends Component {
           helicopters={this.helicopterFiltration}
         />
 
+        {/*//! Літаки */}
+        <Section presence={this.state.isPlanes} title="Магазин моделей літаків">
+          <PlanesList items={planes} />
+        </Section >
+
         {/*//! Вертольоти */}
         <Section presence={this.state.isHelicopters} title="Магазин моделей вертольотів">
           <PlanesList items={helicopters} />
         </Section >
 
-        {/*//! Літаки */}
-        <Section presence={this.state.isPlanes} title="Магазин моделей літаків">
-          <PlanesList items={planes} />
+        {/*//! ВСІ */}
+        <Section presence={this.state.isAll} title="Магазин моделей літальних апаратів">
+          <PlanesList items={aircrafts} />
         </Section >
       </>
     )
