@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import css from "./App.module.css";
+
 import { Section } from '@/components/Section/Section.jsx';
 import { PlanesList } from '@/components/PlanesList/PlanesList.jsx';
-
+import { Filter } from '@/components/Filter/Filter.jsx';
 
 import planes from '@/json/planes.json';
 import helicopters from '@/json/helicopters.json';
@@ -35,15 +36,7 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 
 //! Компонент-клас
 export class App extends Component {
-  //! Дефолтні значення props
-  // static defaultProps = {
-  //   initial: 0,
-  // }
-
-  //! State
   state = {
-    //! Початковий стан лічильника з props
-    // value: this.props.initial,
     isPlanes: true,
     isHelicopters: true,
   };
@@ -77,13 +70,14 @@ export class App extends Component {
         {/*//! Початковий стан лічильника з props */}
         {/* <Counter initialValue={10} />  */}
 
-        <div className={css.filterBox}>
+        {/*//!  Filter */}
+        {/* <div className={css.filterBox}>
           <button
             className={css.buttonAllFiltration}
             type="button"
             onClick={this.allFiltration}
           >
-            All
+            ВСІ
           </button>
 
           <button
@@ -91,7 +85,7 @@ export class App extends Component {
             type="button"
             onClick={this.planeFiltration}
           >
-            Planes
+            Літаки
           </button>
 
           <button
@@ -99,9 +93,15 @@ export class App extends Component {
             type="button"
             onClick={this.helicopterFiltration}
           >
-            Helicopters
+            Вертольоти
           </button>
-        </div>
+        </div> */}
+
+        <Filter
+          all={this.allFiltration}
+          planes={this.planeFiltration}
+          helicopters={this.helicopterFiltration}
+        />
 
         {/*//! Вертольоти */}
         <Section presence={this.state.isHelicopters} title="Магазин моделей вертольотів">
