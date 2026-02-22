@@ -6,7 +6,7 @@ export function Section({ presence, title, children }) {
   return (
     <>
       {presence && 
-        <section>
+        <section className={css.section}>
           {/* //! CSS-модулі з композицією класів */}
           {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
           {/* //! CSS-модулі з composes */}
