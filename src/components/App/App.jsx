@@ -104,9 +104,9 @@ export class App extends Component {
         </div> */}
 
         <Filter
-          all={this.allFiltration}
-          planes={this.planeFiltration}
-          helicopters={this.helicopterFiltration}
+          onAll={this.allFiltration}
+          onPlanes={this.planeFiltration}
+          onHelicopters={this.helicopterFiltration}
         />
 
         {/*//! Літаки */}
