@@ -1,7 +1,7 @@
 .filterBox {
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 10px;
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
