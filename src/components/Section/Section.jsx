@@ -10,7 +10,11 @@ export function Section({ isOn, title, children }) {
           {/* //! CSS-модулі з композицією класів */}
           {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
           {/* //! CSS-модулі з composes */}
-          {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>}
+          {/* {title && <h2 className={css.titleLugrasimoBold}>{title}</h2>} */}
+          {/* //! CSS-модулі з composes з фоновим зображенням */}
+          {title && <div className={css.bgTitleBox}>
+            <h2 className={css.titleLugrasimoBold}>{title}</h2>
+          </div>}
           {children}
         </section>
       }
