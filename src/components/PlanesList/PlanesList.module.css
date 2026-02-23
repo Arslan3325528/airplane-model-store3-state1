@@ -1,10 +1,10 @@
 .planesList {
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(540px, auto));
     gap: 32px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /** backgroundColor: '#ffdb92', // "year" до 1946 */
@@ -12,8 +12,10 @@
     display: grid;
     gap: 12px;
     padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
     background-color: #ffdb92;
-    outline: 1px solid grey;
+    /* outline: 1px solid grey; */
 }
 
 /** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */

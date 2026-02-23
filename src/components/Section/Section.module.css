@@ -13,6 +13,7 @@
     background-position: left 50px;
     background-repeat: repeat-x;
     background-size: auto 350px;
+    /* filter: blur(1px); */
 }
 
 .lugrasimoBold {
@@ -22,21 +23,21 @@
 }
 
 .title {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     font-size: 60px;
     text-align: center;
-    color: #d90000;
     /* color: #f7ffbc; */
+    color: #d90000;
     text-shadow: 3px 3px 3px #ffdac1;
 }
 
 .titleLugrasimoBold {
     composes: lugrasimoBold;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     font-size: 60px;
     text-align: center;
-    color: #d90000;
     /* color: #f7ffbc; */
+    color: #d90000;
     text-shadow: 3px 3px 3px #ffdac1;
 }
 
