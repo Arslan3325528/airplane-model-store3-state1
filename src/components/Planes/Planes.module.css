@@ -18,8 +18,8 @@
 
 .helicopterTitle {
     composes: baseTitle;
-    border-color: #b900b9;
-    background-color: violet;
+    border-color: #ff295d;
+    background-color: #f59aa9;
 }
 
 .textField {

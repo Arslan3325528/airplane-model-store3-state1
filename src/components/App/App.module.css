@@ -44,5 +44,5 @@
 
 .buttonHelicopterFiltration {
     composes: button;
-    outline: 6px violet solid;
+    outline: 6px #f59aa9 solid;
 }

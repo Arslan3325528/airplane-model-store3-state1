@@ -23,12 +23,12 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 //       {/* <Counter initialValue={10} /> */}
 
 //       {/*//! Літаки */}
-//       <Section presence={true} title="Магазин моделей літаків">
+//       <Section isOn={true} title="Магазин моделей літаків">
 //         <PlanesList items={planes} />
 //       </Section >
 
 //       {/*//! Вертольоти */}
-//       <Section presence={true} title="Магазин моделей вертольотів">
+//       <Section isOn={true} title="Магазин моделей вертольотів">
 //         <PlanesList items={helicopters} />
 //       </Section >
 //     </>
@@ -110,17 +110,17 @@ export class App extends Component {
         />
 
         {/*//! Літаки */}
-        <Section presence={this.state.isPlanes} title="Магазин моделей літаків">
+        <Section isOn={this.state.isPlanes} title="Магазин моделей літаків">
           <PlanesList items={planes} />
         </Section >
 
         {/*//! Вертольоти */}
-        <Section presence={this.state.isHelicopters} title="Магазин моделей вертольотів">
+        <Section isOn={this.state.isHelicopters} title="Магазин моделей вертольотів">
           <PlanesList items={helicopters} />
         </Section >
 
         {/*//! ВСІ */}
-        <Section presence={this.state.isAll} title="Магазин моделей літальних апаратів">
+        <Section isOn={this.state.isAll} title="Магазин моделей літальних апаратів">
           <PlanesList items={aircrafts} />
         </Section >
       </>

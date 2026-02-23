@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import css from "./Section.module.css"; 
 
 
-export function Section({ presence, title, children }) {
+export function Section({ isOn, title, children }) {
   return (
     <>
-      {presence && 
+      {isOn && 
         <section className={css.section}>
           {/* //! CSS-модулі з композицією класів */}
           {/* {title && <h2 className={`${css.title} ${css.lugrasimoBold}`}>{title}</h2>} */}
