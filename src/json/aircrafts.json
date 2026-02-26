@@ -372,5 +372,36 @@
       "start": "1947-01-01T00:00:00",
       "end": "1959-01-01T00:00:00"
     }
+  },
+  {
+    "id": "id-13",
+    "aircraftType": "plane",
+    "url": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Vought_O2U_Corsair",
+      "main": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Vought_O2U.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczNnDp7_Y7veh7R_Dr133NFJTTOtSRlbv2W4fk2iYsYEIbA5r8hb3orn6Uqkx7dn6DAU4CD-8ZyvQQqrrcwNZ4fskYW3IMcU_unQoPHAmZXjt4TBqVSb1LRl5LrKHnJJ8HtMDtWmVrpS9qoeVlTi2Lbw=w1380-h1321-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store3-state1/images/planes-actual/o2u-comp-1.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/o2u-comp-2.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/o2u-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/o2u-comp-4.jpg"
+      ]
+    },
+    "name": {
+      "brief": "O2U",
+      "full": "Vought O2U Corsair",
+      "nickname": "Воут Корсар («Vought Corsair»), Ленин («列宁号»)"
+    },
+    "info": {
+      "year": 1926,
+      "country": "США",
+      "type": "Біплан-розвідник, корабельний розвідник, легкий ударний літак, зв'язковий та навчальний літак, патрульний літак",
+      "price": "$15000 — 16000",
+      "description": "Палубний біплан-розвідник та літак спостереження 1920-х років. В 1930 став першим літаком Червоної армії Китаю з назвою «Ленін» і використовувався для розвідки, розкидання листівок і бомбардувань урядових військ. Одним із найвідоміших епізодів стало бомбардування позицій Гоміньдану в Хуан'яні в 1931 році."
+    },
+    "manufacturing": {
+      "start": "1927-01-01T00:00:00",
+      "end": "1930-01-01T00:00:00"
+    }
   }
 ]
