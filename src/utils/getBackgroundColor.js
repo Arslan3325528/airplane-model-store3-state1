@@ -53,11 +53,22 @@ export function getBgColorVanillaCSS(year) {
 // _____________________________________________________
 
 
-//todo: CSS-модулі 
+//todo: CSS-модулі (без WWI+"Golden Age")
+// export function getBgColorCSSModule(year) {
+//     let className = "planesItem";
+//     if (year > 1945) className = "planesItemLast";
+//     if (year > 1999) className = "planesItemCurrent";
+//     // console.log("className:", className); //!
+//     return className;
+// };
+
+//todo: CSS-модулі (з WWI+"Golden Age")
 export function getBgColorCSSModule(year) {
-    let className = "planesItem";
-    if (year > 1945) className = "planesItemLast";
-    if (year > 1999) className = "planesItemCurrent";
+    let className = "";
+    if (year < 1939) className = "planesItemWWIGoldenAge";
+    if (year >= 1939 && year < 1946) className = "planesItemWWII";
+    if (year >= 1946 && year < 2000) className = "planesItemJetAge";
+    if (year >= 2000) className = "planesItemCurrentAge";
     // console.log("className:", className); //!
     return className;
 };
