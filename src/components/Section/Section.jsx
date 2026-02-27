@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from "./Section.module.css"; 
 
 
-export function Section({ isOn, title, children }) {
+export function Section({ isOn = true , title, children }) {
   return (
     <>
       {isOn && 
