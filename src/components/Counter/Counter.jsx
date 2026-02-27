@@ -33,13 +33,14 @@ export class Counter extends Component {
     // };
     //todo: var.2 - створення об'єкта state
     state = {
-        value: 0,
+        // value: 0,
         // value: 5,
         //! Початковий стан лічильника з props
         value: this.props.initialValue,
     };
 
     handleIncrement = () => {
+        console.log("+1");
         // this.state.value = 6; //! ❗️❗️❗️ так не можна робити!!!!
         // this.setState({ value: 9 }); //* ✅ так треба робити для створення НОВОГО ЗНАЧЕННЯ
         //! Оновлення значення від ПОПЕРЕДНЬОГО
@@ -51,6 +52,7 @@ export class Counter extends Component {
     };
 
     handleDecrement = () => {
+        console.log("-1");
         //! Оновлення значення від ПОПЕРЕДНЬОГО
         this.setState(prevState => {
             return {
@@ -113,3 +115,7 @@ export class Counter extends Component {
         )
     }
 };
+
+//! Перерендер компонентів відбувається у двох випадках:
+//! 1.Коли до них приходять нові props
+//! 2.Коли змінюється state ✅

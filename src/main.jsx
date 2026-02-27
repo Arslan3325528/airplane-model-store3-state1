@@ -6,14 +6,21 @@ import { theme } from '@/constants'; //! Emotion Theme
 
 import './index.css';
 
-import { App } from '@/components/App/App.jsx';
+// import { App } from '@/components/App/App.jsx';
+import { AppCounter } from '@/components/App/AppCounter.jsx';
+import { AppFiltration1 } from '@/components/App/AppFiltration1.jsx'
+import { AppFiltration2 } from '@/components/App/AppFiltration2.jsx'
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename="/airplane-model-store3-state1">
       <ThemeProvider theme={theme}>
-        <App />
+        {/* <App /> */}
+        {/* <AppCounter />  */}
+        {/* <AppFiltration1 /> */}
+        <AppFiltration2 /> 
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode >
