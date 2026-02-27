@@ -16,6 +16,7 @@ export class AppFiltration3 extends Component {
 
   allFiltration = () => {
     console.log("Клік в кнопку All");
+    console.log("allAircrafts:", aircrafts);
     this.setState({
       aircraftsArr: aircrafts,
       aircraftsTitle: "Магазин моделей літальних апаратів"
