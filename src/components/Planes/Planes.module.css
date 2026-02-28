@@ -26,17 +26,23 @@
     background-color: #f59aa9;
 }
 
-
 .textField {
+    display: flex;
+    gap: 5px;
     font-size: 18px;
     font-weight: 700;
+}
+/*/*todo: Налаштування для іконок */
+.icon {
+    min-width: 28px;
+    margin-bottom: -8px;
+    color: #9b25fc;
 }
 
 .textFieldValue {
     font-weight: 400;
     font-style: italic;
 }
-
 /*todo: Використання властивості composes */
 .boldStyle {
     composes: textFieldValue;
@@ -51,13 +57,7 @@
     vertical-align: bottom;
     color: blue;
 }
-
 /*/*todo: Налаштування для іконок */
-.icon {
-    margin-bottom: -8px;
-    color: #9b25fc;
-}
-
 .iconImageTitles {
     margin-bottom: -10px;
 }
