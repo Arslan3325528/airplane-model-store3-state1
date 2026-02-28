@@ -28,7 +28,7 @@ export class AppFiltration3 extends Component {
     console.log("onlyPlanes:", onlyPlanes);
     this.setState({
       // aircraftsArr: onlyPlanes,
-      aircraftsArr: aircrafts.filter(aircraft => aircraft.aircraftType === "plane"),
+      aircraftsArr: aircrafts.filter(aircraft => aircraft.aircraftType === "plane" || aircraft.aircraftType === "biplane"),
       aircraftsTitle: "Магазин моделей літаків"
     });
   };

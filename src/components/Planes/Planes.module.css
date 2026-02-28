@@ -9,18 +9,23 @@
     background-color: grey;
     color: blue;
 }
-
 .planeTitle {
     composes: baseTitle;
     border-color: #9d9d00;
     background-color: yellow;
 }
-
 .helicopterTitle {
+    composes: baseTitle;
+    border-color: #005ba5;
+    background-color: #9accf5;
+    
+}
+.biplaneTitle {
     composes: baseTitle;
     border-color: #ff295d;
     background-color: #f59aa9;
 }
+
 
 .textField {
     font-size: 18px;
