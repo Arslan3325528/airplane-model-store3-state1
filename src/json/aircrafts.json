@@ -290,7 +290,7 @@
       "actual": [
         "/airplane-model-store3-state1/images/planes-actual/f-14-white-comp-1.jpg",
         "/airplane-model-store3-state1/images/planes-actual/f-14-black-comp-2.jpg",
-        "/airplane-model-store3-state1/images/planes-actual/F-14-white+black-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/f-14-white+black-comp-3.jpg",
         "/airplane-model-store3-state1/images/planes-actual/f-14-white-comp-4.jpg"
       ]
     },
@@ -402,6 +402,37 @@
     "manufacturing": {
       "start": "1927-01-01T00:00:00",
       "end": "1930-01-01T00:00:00"
+    }
+  },
+  {
+    "id": "id-14",
+    "aircraftType": "plane",
+    "url": {
+      "wikipedia": "https://ru.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle",
+      "main": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/F-15C_%D0%BD%D0%B0%D0%B4_%D0%A2%D0%B8%D1%85%D0%B8%D0%BC_%D0%BE%D0%BA%D0%B5%D0%B0%D0%BD%D0%BE%D0%BC.jpg/3840px-F-15C_%D0%BD%D0%B0%D0%B4_%D0%A2%D0%B8%D1%85%D0%B8%D0%BC_%D0%BE%D0%BA%D0%B5%D0%B0%D0%BD%D0%BE%D0%BC.jpg",
+      "promotional": "https://lh3.googleusercontent.com/pw/AP1GczP566NGFuHUUjOTI-CkAqEMbLTBrN7QCQpFuy1UjgtbEtKgMXEpmL_6mt30qm5nTGszZRa6e5RkgsYA9BfPJCOqHwP7KRigLsk58gdmdsBa84o2zrnruIJXpUrJcgqaebOa7oT-zz5DK_x7sPpHFLSy=w1400-h1002-s-no-gm?authuser=0",
+      "actual": [
+        "/airplane-model-store3-state1/images/planes-actual/f-15-comp-1.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/f-15-comp-2.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/f-15-comp-3.jpg",
+        "/airplane-model-store3-state1/images/planes-actual/f-15-comp-4.jpg"
+      ]
+    },
+    "name": {
+      "brief": "F-15",
+      "full": "McDonnell Douglas F-15 Eagle",
+      "nickname": "Орел («Eagle»)"
+    },
+    "info": {
+      "year": 1972,
+      "country": "США",
+      "type": "Винищувач четвертого покоління",
+      "price": "$90–117 млн",
+      "description": "Всепогодний тактичний винищувач четвертого покоління. Призначений для завоювання переваги в повітрі. Відрізняється високою маневреністю, швидкістю та потужним озброєнням для повітряного бою. Активно використовувався в модифікаціях Strike Eagle (ударний) та Silent Eagle (малопомітний)"
+    },
+    "manufacturing": {
+      "start": "1976-01-01T00:00:00",
+      "end": "now"
     }
   }
 ]
