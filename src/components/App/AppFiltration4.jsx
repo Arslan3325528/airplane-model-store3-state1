@@ -53,7 +53,7 @@ export class AppFiltration4 extends Component {
   render() {
     return (
       <>
-        {/*//!  Filter */}
+        {/*//!  Filter4 */}
         <Filter4
           onAll={this.allFiltration}
           onPlanes={this.planeFiltration}
@@ -63,7 +63,6 @@ export class AppFiltration4 extends Component {
 
         {/*//! ВСІ */}
         <Section
-          // isOn={true} 
           title={this.state.aircraftsTitle}
         >
           <PlanesList items={this.state.aircraftsArr} />
