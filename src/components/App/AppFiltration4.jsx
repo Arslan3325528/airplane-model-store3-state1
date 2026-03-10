@@ -11,7 +11,9 @@ import aircrafts from '@/json/aircrafts.json';
 export class AppFiltration4 extends Component {
   state = {
     aircraftsArr: aircrafts,
-    aircraftsTitle: "Магазин моделей літальних апаратів"
+    aircraftsTitle: "Магазин моделей літальних апаратів",
+    //! Візуалізація активної кнопки
+    activeButton: "allButton"
   };
 
   allFiltration = () => {
@@ -19,7 +21,9 @@ export class AppFiltration4 extends Component {
     console.log("allAircrafts:", aircrafts);
     this.setState({
       aircraftsArr: aircrafts,
-      aircraftsTitle: "Магазин моделей літальних апаратів"
+      aircraftsTitle: "Магазин моделей літальних апаратів",
+      //! Візуалізація активної кнопки
+      activeButton: "allButton"
     });
   };
   planeFiltration = () => {
@@ -28,7 +32,9 @@ export class AppFiltration4 extends Component {
     console.log("onlyPlanes:", onlyPlanes);
     this.setState({
       aircraftsArr: onlyPlanes,
-      aircraftsTitle: "Магазин моделей літаків"
+      aircraftsTitle: "Магазин моделей літаків",
+      //! Візуалізація активної кнопки
+      activeButton: "planeButton"
     });
   };
   biplaneFiltration = () => {
@@ -37,7 +43,9 @@ export class AppFiltration4 extends Component {
     console.log("onlyBiplane:", onlyBiplane);
     this.setState({
       aircraftsArr: onlyBiplane,
-      aircraftsTitle: "Магазин моделей біпланів"
+      aircraftsTitle: "Магазин моделей біпланів",
+      //! Візуалізація активної кнопки
+      activeButton: "biplaneButton"
     });
   };
   helicopterFiltration = () => {
@@ -46,7 +54,9 @@ export class AppFiltration4 extends Component {
     console.log("onlyHelicopters:", onlyHelicopters);
     this.setState({
       aircraftsArr: onlyHelicopters,
-      aircraftsTitle: "Магазин моделей вертольотів"
+      aircraftsTitle: "Магазин моделей вертольотів",
+      //! Візуалізація активної кнопки
+      activeButton: "helicopterButton"
     });
   };
 
@@ -59,6 +69,7 @@ export class AppFiltration4 extends Component {
           onPlanes={this.planeFiltration}
           onBiplanes={this.biplaneFiltration}
           onHelicopters={this.helicopterFiltration}
+          filterButton={this.state.activeButton}
         />
 
         {/*//! ВСІ */}

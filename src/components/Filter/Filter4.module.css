@@ -13,7 +13,7 @@
 
 .button {
     margin: 20px auto;
-    padding: 16px 32px;
+    padding: 16px 24px;
     display: inline-block;
     align-items: center;
     font-family: Franklin Gothic Medium, Arial Narrow;
@@ -51,4 +51,10 @@
 .buttonHelicopterFiltration {
     composes: button;
     border: 6px #9accf5 solid;
+}
+/*//! Візуалізація активної кнопки */
+.active {
+    color: #c51900;
+    box-shadow: none;
+    outline: 1px #902a00 solid;
 }

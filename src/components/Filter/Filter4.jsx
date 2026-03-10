@@ -4,32 +4,43 @@ import css from "./Filter4.module.css";
 
 //? Підняття стану
 //! Звичайний компонент
-export function Filter4({ onAll, onPlanes, onBiplanes, onHelicopters }) {
+export function Filter4({
+  onAll,
+  onPlanes,
+  onBiplanes,
+  onHelicopters,
+  filterButton //! Візуалізація активної кнопки
+})
+{
   return (
     <div className={css.filterBox}>
       <button
-        className={css.buttonAllFiltration}
+        // className={css.buttonAllFiltration}
+        className={filterButton === "allButton" ? `${css.buttonAllFiltration} ${css.active}` : css.buttonAllFiltration}
         type="button"
         onClick={onAll}
       >
         ВСІ
       </button>
       <button
-        className={css.buttonPlaneFiltration}
+        // className={css.buttonPlaneFiltration}
+        className={filterButton === "planeButton" ? `${css.buttonPlaneFiltration} ${css.active}` : css.buttonPlaneFiltration}
         type="button"
         onClick={onPlanes}
       >
         Літаки
       </button>
       <button
-        className={css.buttonBiplaneFiltration}
+        // className={css.buttonBiplaneFiltration}
+        className={filterButton === "biplaneButton" ? `${css.buttonBiplaneFiltration} ${css.active}` : css.buttonBiplaneFiltration}
         type="button"
         onClick={onBiplanes}
       >
         Біплани
       </button>
       <button
-        className={css.buttonHelicopterFiltration}
+        // className={css.buttonHelicopterFiltration}
+        className={filterButton === "helicopterButton" ? `${css.buttonHelicopterFiltration} ${css.active}` : css.buttonHelicopterFiltration}
         type="button"
         onClick={onHelicopters}
       >
