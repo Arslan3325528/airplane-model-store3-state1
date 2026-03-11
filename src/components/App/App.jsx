@@ -8,7 +8,6 @@ import { Filter } from '@/components/Filter/Filter.jsx';
 import planes from '@/json/planes.json';
 import helicopters from '@/json/helicopters.json';
 // import { planes, helicopters } from '@/json'; //! ❌ так не працює
-import aircrafts from '@/json/aircrafts.json';
 
 
 //! Збільшення/Зменьшення на 1
@@ -39,17 +38,15 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 //! Компонент-клас
 export class App extends Component {
   state = {
-    isPlanes: false,
-    isHelicopters: false,
-    isAll: true,
+    isPlanes: true,
+    isHelicopters: true,
   };
 
   allFiltration = () => {
     console.log("Клік в кнопку All");
     this.setState({
-      isPlanes: false,
-      isHelicopters: false,
-      isAll: true,
+      isPlanes: true,
+      isHelicopters: true,
     });
   };
   planeFiltration = () => {
@@ -57,7 +54,6 @@ export class App extends Component {
     this.setState({
       isPlanes: true,
       isHelicopters: false,
-      isAll: false,
     });
   };
   helicopterFiltration = () => {
@@ -65,7 +61,6 @@ export class App extends Component {
     this.setState({
       isPlanes: false,
       isHelicopters: true,
-      isAll: false,
     });
   };
 
@@ -77,7 +72,7 @@ export class App extends Component {
         {/* <Counter initialValue={10} />  */}
 
         {/*//!  Filter */}
-        {/* <div className={css.filterBox}>
+        <div className={css.filterBox}>
           <button
             className={css.buttonAllFiltration}
             type="button"
@@ -101,13 +96,13 @@ export class App extends Component {
           >
             Вертольоти
           </button>
-        </div> */}
+        </div>
 
-        <Filter
+        {/* <Filter
           onAll={this.allFiltration}
           onPlanes={this.planeFiltration}
           onHelicopters={this.helicopterFiltration}
-        />
+        /> */}
 
         {/*//! Літаки */}
         <Section isOn={this.state.isPlanes} title="Магазин моделей літаків">
@@ -117,11 +112,6 @@ export class App extends Component {
         {/*//! Вертольоти */}
         <Section isOn={this.state.isHelicopters} title="Магазин моделей вертольотів">
           <PlanesList items={helicopters} />
-        </Section >
-
-        {/*//! ВСІ */}
-        <Section isOn={this.state.isAll} title="Магазин моделей літальних апаратів">
-          <PlanesList items={aircrafts} />
         </Section >
       </>
     )
