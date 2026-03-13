@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import css from "./App.module.css";
+
 
 //! Збільшення/Зменьшення на 1
 import { Counter } from '@/components/Counter/Counter.jsx';
