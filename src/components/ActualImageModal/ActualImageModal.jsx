@@ -12,6 +12,8 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 // import "yet-another-react-lightbox/plugins/zoom.css";  //❌
 // import "yet-another-react-lightbox/plugins/zoom/zoom.css";  //❌
+import Download from "yet-another-react-lightbox/plugins/download";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 
 
 export class ActualImageModal extends Component {
@@ -59,9 +61,11 @@ export class ActualImageModal extends Component {
           close={this.closeLightbox}
           slides={slides}
           index={index}
-          //? Додавання популярних плагінів: Fullscreen + Zoom  
+          //? Додавання популярних плагінів: Fullscreen + Zoom
           // plugins={[Fullscreen]}
-          plugins={[Zoom, Fullscreen]}
+          // plugins={[Zoom, Fullscreen]}
+          // plugins={[Zoom, Fullscreen, Download]}
+          plugins={[Zoom, Fullscreen, Download, Slideshow]}
         />
       </div>
     );
