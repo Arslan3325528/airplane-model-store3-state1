@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import css from "./ActualImageModal.module.css"; 
 
 //? Бібліотека для модальних вікон - React Image Lightbox
 //❌ npm install yet-another-react-lightbox - ❌так може не працювати
@@ -6,7 +7,11 @@ import React, { Component } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import css from "./ActualImageModal.module.css"; 
+//? Додавання популярних плагінів: Fullscreen + Zoom  
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+// import "yet-another-react-lightbox/plugins/zoom.css";  //❌
+// import "yet-another-react-lightbox/plugins/zoom/zoom.css";  //❌
 
 
 export class ActualImageModal extends Component {
@@ -36,7 +41,7 @@ export class ActualImageModal extends Component {
 
     return (
       <div className={css.actualImageBox}>
-        {/*//! Галерея */}
+        {/*//! Галерея (блока зображень)*/}
         {images.map((img, i) => (
           <img
             key={i} //* також унікальний 
@@ -48,12 +53,15 @@ export class ActualImageModal extends Component {
           />
         ))}
 
-        {/*//!  Lightbox */}
+        {/*//! Lightbox */}
         <Lightbox
           open={open}
           close={this.closeLightbox}
           slides={slides}
           index={index}
+          //? Додавання популярних плагінів: Fullscreen + Zoom  
+          // plugins={[Fullscreen]}
+          plugins={[Zoom, Fullscreen]}
         />
       </div>
     );
