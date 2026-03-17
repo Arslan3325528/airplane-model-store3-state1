@@ -10,8 +10,6 @@ import "yet-another-react-lightbox/styles.css";
 //? Додавання популярних плагінів: Fullscreen + Zoom  
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-// import "yet-another-react-lightbox/plugins/zoom.css";  //❌
-// import "yet-another-react-lightbox/plugins/zoom/zoom.css";  //❌
 import Download from "yet-another-react-lightbox/plugins/download";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Counter from "yet-another-react-lightbox/plugins/counter";
@@ -116,7 +114,6 @@ export class ActualImageModal extends Component {
               showToggle: true
           }}
         
-
         // plugins={[Zoom, Fullscreen]}
         // plugins={[Fullscreen, Zoom, Download]}
         // plugins={[Fullscreen, Zoom, Download, Slideshow]}
