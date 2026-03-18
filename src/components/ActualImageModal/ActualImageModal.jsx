@@ -85,7 +85,7 @@ export class ActualImageModal extends Component {
             counter={{
               container: {
                 style: {
-                  top: "4vh",
+                  top: "5vh",
                   bottom: "unset",
                   left: "5vw",
                   fontSize: "1.1em",
