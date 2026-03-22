@@ -70,8 +70,8 @@ import clsx from "clsx";
 export function getBgColorCSSModule(year) {
     let className = "";
     if (year < 1939) className = "planesItemWWIGoldenAge";
-    if (year >= 1939 && year < 1946) className = "planesItemWWII";
-    if (year >= 1946 && year < 2000) className = "planesItemJetAge";
+    if (year >= 1939 && year <= 1945) className = "planesItemWWII";
+    if (year >= 1946 && year <= 1999) className = "planesItemJetAge";
     if (year >= 2000) className = "planesItemCurrentAge";
     // console.log("className:", className); //!
     return className;
