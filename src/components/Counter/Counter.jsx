@@ -1,5 +1,6 @@
 // import React from "react";
 import React, { Component } from "react";
+import { Controls } from '@/components/Counter/Controls';
 import css from "./Counter.module.css";
 
 //! Звичайний компонент
@@ -22,6 +23,8 @@ export class Counter extends Component {
     static defaultProps = {
         initialValue: 9,
     }
+
+    // const {initialValue = 8} = this.props //! ❗️❗️❗️ так не можна робити!!!!
 
     //todo: var.1 - створення об'єкта state
     // constructor() {
@@ -62,18 +65,20 @@ export class Counter extends Component {
     };
 
     // handleIncrement() {
+    // // handleIncrement = () => {
     //     console.log("+1");
-    //     console.log("this:", this); //! undefined
+    //     console.log("this:", this); //! undefined, якщо handleIncrement() {} 
     // };
-    //! Публичное свойство класса со стрелочной функцией:
+    //! Публічна властивість класу зі стрілочною функцією:
     handleIncrement_0 = (event) => {
+    // handleIncrement = (event) => {
         console.log("+1");
-        // console.log("this:", this); //* Counter{...}
-        // console.log("event:", event);
-        // console.log("event.target:", event.target);
-        // console.log("event.type:", event.type); 
+        console.log("this:", this); //* Counter{...}
+        console.log("event:", event);
+        console.log("event.target:", event.target);
+        console.log("event.type:", event.type); 
 
-        //! Доступность event в синхронном коде
+        //! Доступність event у синхронному коді
         //todo: var.1
         setTimeout(() => {
             console.log("event.target:", event.target);
@@ -92,9 +97,18 @@ export class Counter extends Component {
 
     render() {
         return (
+            // <div className={css.counter}>
+            //     <span className={css.counterValue}>0</span>
+            //     <div className={css.counterControls}>
+            //         <button className={css.buttonIncrement}>+ 1</button>
+            //         <button className={css.buttonDecrement}>- 1</button>
+            //     </div>
+            // </div>
+
             <div className={css.counter}>
                 {/* <span className={css.counterValue}>0</span> */}
                 <span className={css.counterValue}>{this.state.value}</span>
+                
                 <div className={css.counterControls}>
                     <button
                         className={css.buttonIncrement}
@@ -111,6 +125,11 @@ export class Counter extends Component {
                     >- 1
                     </button>
                 </div>
+
+                {/* <Controls
+                    onHandleIncrement={this.handleDecrement}
+                    onHandleDecrement={this.handleDecrement}
+                /> */}
             </div>
         )
     }

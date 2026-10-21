@@ -7,6 +7,7 @@ import { Counter } from '@/components/Counter/Counter.jsx';
 
 //! Звичайний компонент
 export function AppCounter() {
+
   return (
     <>
       {/* <div className={css.counter}>
@@ -16,7 +17,7 @@ export function AppCounter() {
             <button className={css.buttonDecrement}>- 1</button>
         </div>
       </div> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* //! Початковий стан лічильника з props */}
       <Counter initialValue={10} />
     </>
