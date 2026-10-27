@@ -136,7 +136,7 @@ export class Counter extends Component {
                 </div> */}
 
                 <Controls
-                    onHandleIncrement={this.handleDecrement}
+                    onHandleIncrement={this.handleIncrement}
                     onHandleDecrement={this.handleDecrement}
                 />
             </div>
