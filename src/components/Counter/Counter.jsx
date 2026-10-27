@@ -96,6 +96,14 @@ export class Counter extends Component {
 
 
     render() {
+        const { initialValue } = this.props; //! деструктурізуємо значення props
+        const { value } = this.state; //! деструктурізуємо значення state
+
+        console.log("-------------------- props & state --------------------");
+        console.log("ℹ️initialValue:", initialValue);
+        console.log("🔢value:", value);
+        console.log("-------------------------------------------------------");
+
         return (
             // <div className={css.counter}>
             //     <span className={css.counterValue}>0</span>
@@ -109,7 +117,8 @@ export class Counter extends Component {
                 {/* <span className={css.counterValue}>0</span> */}
                 <span className={css.counterValue}>{this.state.value}</span>
                 
-                <div className={css.counterControls}>
+                {/* //! Виносимо в окремий компонент <Controls /> */}
+                {/* <div className={css.counterControls}>
                     <button
                         className={css.buttonIncrement}
                         type="button"
@@ -124,12 +133,12 @@ export class Counter extends Component {
                         onClick={this.handleDecrement}
                     >- 1
                     </button>
-                </div>
+                </div> */}
 
-                {/* <Controls
+                <Controls
                     onHandleIncrement={this.handleDecrement}
                     onHandleDecrement={this.handleDecrement}
-                /> */}
+                />
             </div>
         )
     }
