@@ -23,7 +23,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 export class ActualImageModal extends Component {
   state = {
-    open: false,
+    open: false, //! керування відкриттям та закриттям галереї
     index: 0
   };
 
@@ -74,6 +74,7 @@ export class ActualImageModal extends Component {
             alt={nameBrief}
             className={css.actualImage}
             // style={{ cursor: "pointer" }}
+            //! Обробник onClick запам'ятовує індекс фотографії на яку натиснув користувач
             onClick={() => this.openLightbox(i)}
           />
         ))}
