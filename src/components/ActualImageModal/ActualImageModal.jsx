@@ -24,9 +24,10 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 export class ActualImageModal extends Component {
   state = {
     open: false, //! керування відкриттям та закриттям галереї
-    index: 0
+    index: 0 //! індекс зображення, з якого відкриваємо галерею
   };
 
+  //! Обробник кліка по зображенню
   openLightbox = (i) => {
     this.setState({
       open: true,
@@ -34,6 +35,7 @@ export class ActualImageModal extends Component {
     });
   };
 
+  //! Обробник закриття галереї
   closeLightbox = () => {
     this.setState({
       open: false
@@ -85,6 +87,11 @@ export class ActualImageModal extends Component {
           close={this.closeLightbox}
           slides={slides}
           index={index}
+          //! ЗНАЧЕННЯ ОСНОВНИХ ВЛАСТИВОСТЕЙ Lightbox:
+          //! open - Відкрито або закрито галерею
+          //! close - Функція закриття галереї
+          //! slides - Масив об'єктів з зображеннями для перегляду
+          //! index - ндекс фотографії, з якої починається перегляд
           //? Додавання популярних плагінів: Fullscreen + Zoom
           // plugins={[Fullscreen]}
           // plugins={[Zoom]}
